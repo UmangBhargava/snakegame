@@ -1,4 +1,4 @@
-function Snake() {
+function Snake() { //creted main driver function
     this.x = 0;
     this.y = 0;
     this.xspeed = 1;
@@ -33,8 +33,8 @@ function Snake() {
       }
     }
   
-    this.update = function() {
-      for (var i = 0; i < this.tail.length - 1; i++) {
+    this.update = function() { 
+      for (var i = 0; i < this.tail.length - 1; i++) { //basic for loop
         this.tail[i] = this.tail[i + 1];
       }
       if (this.total >= 1) {
